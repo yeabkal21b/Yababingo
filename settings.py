@@ -24,5 +24,3 @@ DATABASES = {
 CORS_ALLOWED_ORIGINS = [
     "https://your-render-frontend-url.onrender.com",
 ]```
-
-### `requirements.txt`
