@@ -1,0 +1,14 @@
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "/api",
+  withCredentials: true,
+});
+
+export const fetchProfile = () => api.get("/profile/");
+export const fetchTransactions = () => api.get("/transactions/");
+export const fetchGameSpeeds = () => api.get("/game-speeds/");
+export const fetchWinningPatterns = () => api.get("/winning-patterns/");
+export const createGame = (data) => api.post("/create-game/", data);
+
+export default api;
