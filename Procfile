@@ -1,0 +1,1 @@
+web: gunicorn yaba_bingo.wsgi:application
